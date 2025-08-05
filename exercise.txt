@@ -1,0 +1,11 @@
+1) Create a parent class named Animal.
+
+    The parent class should have methods like speak() (which returns a general message) and is_alive() (which returns True).
+
+    Create two child classes, Dog and Cat, each inheriting from Animal.
+
+    The Dog class should have a constructor that takes a dog's name and a method fetch() that returns a string indicating the dog is fetching a ball.
+
+    The Cat class should have a constructor that takes a cat's name and a method climb() that returns a string about the cat climbing a tree.
+
+    Both Dog and Cat should override the speak() method with animal-specific sounds.
