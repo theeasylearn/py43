@@ -9,3 +9,23 @@
     The Cat class should have a constructor that takes a cat's name and a method climb() that returns a string about the cat climbing a tree.
 
     Both Dog and Cat should override the speak() method with animal-specific sounds.
+
+2) create class Human which has following instance variable & methods 
+    instance variables 
+        Name, gender 
+    Methods 
+        read()
+        write()
+    create class Machine which has following instance variable & methods 
+    instance variables 
+        Make, model  
+    Methods 
+        work()
+        capacity()
+
+    create class Humaniod which will inherit Human and machine class and it has following instance variable & methods 
+    instance variables 
+        description   
+    Methods 
+        whatICanDo() 
+
