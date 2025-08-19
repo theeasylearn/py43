@@ -8,7 +8,7 @@ class Account:
         #private instance variable
         self.__balance = balanace
     def updateBalance(self,amount):
-        self.__balance += amount 
+        self.__balance = amount 
     def display(self):
         print(f"name = {self.name} acc type = {self.type} balance = {self.__balance}")
 
@@ -21,3 +21,4 @@ a1.display()
 a1.name = "Jiya Patel" # will update name 
 a1.balance = 10000000 #will be ignored
 a1.display()
+# print(a1.__balance) #we can not access private variable using object outside class 
