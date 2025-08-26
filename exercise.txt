@@ -29,3 +29,15 @@
     Methods 
         whatICanDo() 
 
+Method Overidding
+-------------------
+
+create class circle which has constructor and method getArea which return area of circle
+
+create class sphere  which extends circle and it also has constructor and method getArea which return area of sphere
+
+Data Hiding / private method 
+------------------------------
+class Student which has private variables like 
+    maths, science, history and 
+    has methods like updateMath, updateScience, updateHistory all these 3 method has marks as argument and it should set marks of corresonding  subject (mark should not less then 0 and above 100). also this class has display method which will display all subject marks with labels. just try to change private value outside class notice marks will updated.
