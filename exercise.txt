@@ -41,3 +41,12 @@ Data Hiding / private method
 class Student which has private variables like 
     maths, science, history and 
     has methods like updateMath, updateScience, updateHistory all these 3 method has marks as argument and it should set marks of corresonding  subject (mark should not less then 0 and above 100). also this class has display method which will display all subject marks with labels. just try to change private value outside class notice marks will updated.
+
+
+modules 
+---------------------
+convert kg to pound
+convert pound to kg 
+convert Liter to KG
+convert KG to Liter 
+create all functions into one file named as converter.py and call it from another python file 
