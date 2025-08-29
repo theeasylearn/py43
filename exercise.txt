@@ -47,6 +47,9 @@ modules
 ---------------------
 convert kg to pound
 convert pound to kg 
-convert Liter to KG
-convert KG to Liter 
+
+convert Liter cooking oil to KG
+convert KG to 1 Liter cooking oil 
+https://www.inchcalculator.com/convert/liter-to-kilogram/
+
 create all functions into one file named as converter.py and call it from another python file 
