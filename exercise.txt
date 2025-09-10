@@ -53,3 +53,13 @@ convert KG to 1 Liter cooking oil
 https://www.inchcalculator.com/convert/liter-to-kilogram/
 
 create all functions into one file named as converter.py and call it from another python file 
+
+scope of variable
+-------------------------
+create global variable salary and store 5000 in it. 
+create method incrementSalary(value) 
+it should increase global salary by given value (value will be given user )
+display salary variable before calling incrementSalary method
+display salary variable after calling incrementSalary method
+
+
