@@ -63,3 +63,9 @@ display salary variable before calling incrementSalary method
 display salary variable after calling incrementSalary method
 
 
+maths.related functions
+------------------------------------------
+1) findout factorial of given number. number must be positive number 
+    use math module' s fabs & factorial function 
+
+2) findout rupee value of given dollar value (float). convert given dollar to round value using ceil function. 
