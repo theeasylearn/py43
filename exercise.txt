@@ -69,3 +69,33 @@ maths.related functions
     use math module' s fabs & factorial function 
 
 2) findout rupee value of given dollar value (float). convert given dollar to round value using ceil function. 
+
+Random module 
+
+Roll a Dice
+Write a program that prints a random number between 1 and 6 (like rolling a dice).
+
+Lucky Number
+Ask the user for their name and print a “lucky number” between 1 and 100.
+
+
+Random Choice
+Make a list of fruits (like ["apple", "banana", "mango", "orange"]) and print one fruit randomly.
+
+Coin Toss
+Write a program that randomly prints "Heads" or "Tails".
+
+
+String module exercise 
+
+All Alphabets
+Print all lowercase letters using string.ascii_lowercase.
+
+Password Generator
+Create a program that generates a random 6-character password using letters and digits.
+
+Count Vowels
+Ask the user to enter a word and count how many vowels (a, e, i, o, u) are in it.
+
+String Mix
+Take two words (like "cat" and "dog") and join them together in reverse order.
