@@ -87,6 +87,7 @@ Write a program that randomly prints "Heads" or "Tails".
 
 
 String module exercise 
+-------------------------------
 
 All Alphabets
 Print all lowercase letters using string.ascii_lowercase.
