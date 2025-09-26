@@ -100,3 +100,23 @@ Ask the user to enter a word and count how many vowels (a, e, i, o, u) are in it
 
 String Mix
 Take two words (like "cat" and "dog") and join them together in reverse order.
+
+package
+---------------------
+    create package world which has 3 sub package 
+        Europe
+            has file country.py
+            should have method getCountries
+                which returns  name of all countries in europe as list in ascending order 
+        Asia 
+            has file country.py
+            should have method getCountries
+                which returns  name of all countries in asia as list in ascending order 
+        Australia
+            has file country.py
+            should have method getCountries
+                which returns  name of all countries in asia as list in ascending order 
+
+packagedemo.py 
+    import all sub-package's module from world package along with alias name 
+    you call method getCountries from each country.py file of different sub-package & display countries 
