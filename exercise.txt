@@ -120,3 +120,17 @@ package
 packagedemo.py 
     import all sub-package's module from world package along with alias name 
     you call method getCountries from each country.py file of different sub-package & display countries 
+
+
+file management 
+--------------------
+1) create a file festivals.txt and write down 10 indian festivals name in it 
+
+write a program to read file festivals.txt using file.read function 
+write a program to read file festivals.txt using line by line 
+
+2) create a file birdthdates.txt and write down name birth dates  of your 5 friends.
+
+write a program to read file birdthdates.txt using file.read function 
+write a program to read file birdthdates.txt using line by line 
+
