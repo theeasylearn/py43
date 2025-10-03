@@ -134,3 +134,13 @@ write a program to read file festivals.txt using line by line
 write a program to read file birdthdates.txt using file.read function 
 write a program to read file birdthdates.txt using line by line 
 
+3) write a program to create a file country.txt using with & fopen function.
+you should open file in write mode. program should take country name from user as input & write into file country until user type exit. 
+
+4) write a program to open a file country.txt using with & fopen function.
+you should open file in append mode. program should take country name from user as input & write into file country until user type exit.
+
+5) write a program to open file country.txt & display all countries name. use open, with function along with try except block. 
+
+6) write a program to rename file apple.txt(it should exist) as banana.txt file using os.rename function 
+
