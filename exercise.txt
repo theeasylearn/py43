@@ -144,3 +144,15 @@ you should open file in append mode. program should take country name from user 
 
 6) write a program to rename file apple.txt(it should exist) as banana.txt file using os.rename function 
 
+7) write a program to delete file hello.py using os.remove function. after file has been deleted, display message "file has been removed"
+
+8) write a program to accept folder name and create it using os.mkdir function 
+
+9) write a program to accept folder name and delete it using os.rmdir function 
+
+10) write a program to accept folder name and set it to current working directory using os.chdir function. and also get current working directory using os.getcwd function 
+
+11) write a program to copy given file name and copy it into copy.txt 
+
+12) write a program to check whether friends.txt exists or not. if exists print some message other print file does not exists.
+
