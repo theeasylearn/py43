@@ -160,3 +160,8 @@ you should open file in append mode. program should take country name from user 
 
 12) write a program to check whether friends.txt exists or not. if exists print some message other print file does not exists.
 
+exception handling 
+------------------------------------------------------------
+rewrite example no 18 using exception handling mechanism 
+rewrite example no 19 using exception handling mechanism 
+rewrite example no 20 using exception handling mechanism 
