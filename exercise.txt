@@ -165,3 +165,8 @@ exception handling
 rewrite example no 18 using exception handling mechanism 
 rewrite example no 19 using exception handling mechanism 
 rewrite example no 20 using exception handling mechanism 
+
+write a program to accept age from user. if age is below 6 or above 13 then raise exception that display message you are not eligible to use this ride as it is for only childrens between 6 to 13. otherwise display message welcome to the ride. ensure safety 
+
+write a program that accept time from user in hours minutes and second format. take input from user separately. make sure that hours, minutes and seconds are in valid range. if not raise custom exception names as InvalidTimeException. if time is valid display message your have valid time. 
+
