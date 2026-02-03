@@ -6,3 +6,4 @@
 5) delete friends whose surname is shah 
 6) delete friends whose id is 3 
 7) delete friends who are from rajkot 
+

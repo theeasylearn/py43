@@ -37,3 +37,91 @@ SQL : select customerNumber, customerName, city, state, country, creditLimit fro
 
 10) select customerNumber, customerName, city, state, country, creditLimit of those customers whose country is USA or France or Australia or japan
 SQL : select customerNumber, customerName, city, state, country, creditLimit from customers where country in ('USA','france','Australia','japan')
+
+11) select customerNumber, customerName, city, state, country, creditLimit of those customers whose creditLimit limit in between 100000 to 999999
+
+SQL : select customerNumber, customerName, city, state, country, creditLimit from customers where creditLimit >=100000 and creditLimit<=999999
+
+OR 
+
+select customerNumber, customerName, city, state, country, creditLimit from customers where creditLimit  between 100000 and 999999
+
+12) select customerNumber, customerName, city, state, country, creditLimit from customers where country is USA and state is CA and city is San Francisco
+
+SQL : select customerNumber, customerName, city, state, country, creditLimit from customers where country ='usa' and state='ca' and city = 'San Francisco'
+
+12) select customerNumber, customerName, city, state, country, creditLimit from customers where country is USA and state is CA and city is Delhi 
+
+SQL : select customerNumber, customerName, city, state, country, creditLimit from customers where country ='usa' and state='ca' and city = 'Delhi'
+
+13) select unique country from customers table & display it in ascending order 
+SQL : select distinct country from customers order by country
+
+
+14) select customerNumber, customerName, city, state, country, creditLimit of those customers who are not from  USA, France, Australia, japan & display them in ascending order of country name 
+
+SQL : select customerNumber, customerName, city, state, country, creditLimit from customers where country not in ('USA','france','Australia','japan') order by country 
+
+    OR 
+select customerNumber, customerName, city, state, country, creditLimit from customers where country !='USA' and country!='france' and country!='Australia' and country !='japan'
+
+------------------------------------------------------------------------------
+Aggregate function
+
+function that work upon numeric field and return single value is called Aggregate function. 
+
+sum()
+sum function returns the sum of given numeric field 
+
+avg()
+avg function returns the average of given numeric field 
+
+min()
+min() function return the minimum value of given field 
+
+max()
+max() function return the maximum value of given field 
+
+count()
+count() function count no of rows in table
+
+15) fetch total payment amount from payments 
+SQL : select sum(amount) as total_amount from payments 
+
+16) fetch minimum and maximum amount from payments 
+SQL : select min(amount) as minimum_amount , max(amount) as maximum_amount from payments 
+
+17) fetch average payment amount from payments
+SQL : select avg(amount) as average_amount from payments 
+
+18) count no of customers
+SQL : select count(*) as count from customers
+
+
+let use Aggregate function with where clause 
+19) fetch count of customers who are from usa 
+SQL : select count(*) from customers where country='USA'
+
+20) fetch total payment amount of customers whose customerNumber is 112
+SQL : SELECT SUM(amount) from payments where customerNumber=112
+
+21) fetch total payment amount received in year 2004
+SQL : SELECT SUM(AMOUNT) FROM payments WHERE paymentdate>='2004-01-01' and paymentdate<='2004-12-31'
+
+22) fetch average payment amount of customer whose customerNumber is 114
+SQL  : select avg(amount) from payments where customerNumber=114
+
+Group By : 
+Group by clause is used to calculate result for Aggregate function  based upon repetitive value  of specific field 
+
+Group by clause is used along with Aggregate function. it returns sub total on repetitive value of the specific field. 
+
+23) fetch total payments amount for each and every customers
+SQL : select customerNumber, sum(amount) from payments group by customerNumber
+
+24) fetch no of payments received by each every customers
+SQL : select customerNumber,count(*) from payments group by customerNumber
+
+
+25) fetch maximum payment amount received by each and every customer
+SQL : select customerNumber,max(amount) from payments group by customerNumber
