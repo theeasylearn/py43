@@ -65,3 +65,22 @@
 49. Find how many payments were made by customerNumber 171.
 50. Find the biggest single payment amount made by customerNumber 119.
 
+51. Select customerNumber, customerName, country from customers and orderNumber, orderDate from orders for all customers who have placed any orders. Sort the result by customerNumber ascending.
+
+52. Show customerName, city, phone, orderNumber, requiredDate, shippedDate from customers and orders tables. Display the result sorted by orderDate from oldest to newest.
+
+53. Fetch customerNumber, customerName, creditLimit from customers and amount, checkNumber from payments. Show all payments made by customers. Sort by customerNumber, then by payment date.
+
+54. Display customerName, country, orderNumber, status from customers and orders. Include only orders that have status 'Shipped'. Sort by country, then customerName.
+
+55. Select customerNumber, customerName, city from customers and paymentDate, amount from payments. Show results only for payments greater than 50000. Sort by amount descending.
+
+56. Get productName, productLine, buyPrice from products and orderNumber, quantityOrdered from orderdetails. Show all ordered products. Sort by productName ascending.
+
+57. Show customerName, country, orderNumber, orderDate, status from customers and orders. Sort first by country ascending, then by orderDate descending.
+
+58. Fetch customerNumber, customerName, contactLastName, contactFirstName from customers and checkNumber, paymentDate, amount from payments. Sort the result by paymentDate from newest to oldest.
+
+59. Display productCode, productName, MSRP from products and quantityOrdered, priceEach from orderdetails. Include only order details where quantityOrdered is greater than 50. Sort by quantityOrdered descending.
+
+60. Select customerName, city, state, country from customers, orderNumber, orderDate, requiredDate from orders. Show only orders that were required in the year 2003. Sort by customerName.

@@ -125,3 +125,56 @@ SQL : select customerNumber,count(*) from payments group by customerNumber
 
 25) fetch maximum payment amount received by each and every customer
 SQL : select customerNumber,max(amount) from payments group by customerNumber
+
+
+26) fetch customer wise total payment amount 
+SQL : select customerNumber,sum(amount) from payments group by customerNumber
+
+27) fetch customer wise no of payments made 
+SQL : select customerNumber, count(*) from payments group by customerNumber
+
+28) fetch country name and no of customer from each country. 
+SQL : select country, count(*) from customers group by country
+
+having clause 
+--------------------------------------------------------------
+having clause is used only when we need to give condition on value returned by group by clause. so it means having clause is used only when we use group by clause
+
+29) fetch customer wise total payment amount of those customers whose total payment amount is above 1 lakh 
+SQL : select customerNumber,sum(amount) from payments group by customerNumber having sum(amount)>100000
+
+30) fetch customer wise no of payments made of those customers who have made more then 3 payments 
+SQL : select customerNumber, count(*) from payments group by customerNumber having count(*)>3
+
+31) fetch country name and no of customer from each country where there are more then 5 customers. 
+SQL : select country, count(*) from customers group by country having count(*)>5
+
+JOINS
+-------------------------------------------------------------------------------------
+SQL Join is used to fetch & display data from multiple table in single select statement
+
+32) fetch customerNumber, customerName,city,state,country and orderNumber, orderDate, status of order, display it customerNumber wise ascending order 
+
+select customerNumber, customerName,city,state,country from customers order by customerNumber
+select orderNumber,orderDate,status from orders 
+
+let us join them 
+
+select c.customerNumber, customerName,city,state,country,orderNumber,orderDate,status from customers c,orders o where c.customerNumber=o.customerNumber order by c.customerNumber
+
+33) fetch customerNumber,customerName,city,state,country and paymentdate, amount of each and every customers & display them payment date wise 
+
+select customerNumber,customerName,city,state,country from customers c 
+select paymentdate,amount from payments p 
+
+let us join them 
+SQL : select c.customerNumber,customerName,city,state,country,paymentdate,amount from customers c, payments p where c.customerNumber=p.customerNumber order by paymentDate
+
+34) fetch productCode,ProductName,quantityOrdered,priceEach,orderNumber,orderDate,status of each and every order 
+
+select productCode,ProductName from products p 
+select quantityOrdered,priceEach,orderNumber from orderdetails od 
+select orderdate,status from orders o 
+
+let us join them 
+select productCode,ProductName, quantityOrdered,priceEach,orderNumber,orderdate,status from products p, orderdetails od, orders o where p.productCode = od.productCode and od.orderNumber = o.orderNumber
