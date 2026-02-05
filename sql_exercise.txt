@@ -9,9 +9,6 @@
 
 ---------------------------------------------------------------------
 
-Here are **50 easy-level SQL practice exercises** based on the same tables (**customers** and **payments**) and using only the concepts and fields from your provided examples. Only questions are listed — no solutions.
-
-### Basic SELECT (1–10)
 1. Select all columns and all rows from the customers table.
 2. Select customerNumber, customerName, and country from the customers table.
 3. Select customerName, city, and creditLimit from all customers.
@@ -23,7 +20,6 @@ Here are **50 easy-level SQL practice exercises** based on the same tables (**cu
 9. Select customerNumber and customerName from customers table.
 10. Select city, state, country from all customers.
 
-### ORDER BY (11–20)
 11. Select customerName, city, country and sort the result by customerName in ascending order.
 12. Select customerNumber, customerName, creditLimit and sort by creditLimit from highest to lowest.
 13. Select customerName, country, city and sort first by country (A–Z), then by city (A–Z).
@@ -35,7 +31,6 @@ Here are **50 easy-level SQL practice exercises** based on the same tables (**cu
 19. Select customerNumber, customerName, city and sort first by city ascending, then by customerName ascending.
 20. Select country, state, customerName from customers and sort by country descending, then state ascending.
 
-### WHERE – Simple Filters (21–30)
 21. Select customerName, city, country of customers who live in Germany.
 22. Select customerNumber, customerName, creditLimit of customers whose country is UK.
 23. Select customerName, city, state of customers from city Paris.
@@ -47,7 +42,6 @@ Here are **50 easy-level SQL practice exercises** based on the same tables (**cu
 29. Select customerName, city, state, country of customers from USA and state NY.
 30. Select customerNumber, customerName, creditLimit from customers where country is Japan and creditLimit > 90000.
 
-### WHERE with IN / NOT IN / AND / OR (31–38)
 31. Select customerName, country of customers from USA, France, or UK.
 32. Select customerNumber, customerName, city of customers from Australia, Japan, or Singapore.
 33. Select customerName, creditLimit, country of customers NOT from USA.
@@ -57,7 +51,6 @@ Here are **50 easy-level SQL practice exercises** based on the same tables (**cu
 37. Select customerName, city, state, creditLimit of customers from USA and city is either NY or Boston or LA.
 38. Select customerNumber, customerName, country where creditLimit > 100000 and country is USA or Germany.
 
-### DISTINCT & Simple Aggregates (39–45)
 39. Select all unique countries from the customers table.
 40. Select all unique cities from customers and sort them A to Z.
 41. Select all unique countries and sort them in descending order.
@@ -66,7 +59,6 @@ Here are **50 easy-level SQL practice exercises** based on the same tables (**cu
 44. Find the lowest creditLimit value among all customers.
 45. Find the average creditLimit of all customers.
 
-### Aggregates with WHERE & GROUP BY (46–50)
 46. Count how many customers are from France.
 47. Count how many customers have country = 'USA'.
 48. Find the total payment amount received from customerNumber 124.
