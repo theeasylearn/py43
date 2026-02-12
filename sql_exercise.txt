@@ -1,5 +1,6 @@
 1) create table to store your friends detail into it.
     store your friend name,surname,gender,dob,mobile,email,address,city,pincode,bloodgroup etc 
+    
 2) insert 5 row into friends table using 1st syntax 
 3) insert 5 row into friends table using 2nd syntax 
 4) delete friends whose name is kishor 

@@ -178,3 +178,33 @@ select orderdate,status from orders o
 
 let us join them 
 select productCode,ProductName, quantityOrdered,priceEach,orderNumber,orderdate,status from products p, orderdetails od, orders o where p.productCode = od.productCode and od.orderNumber = o.orderNumber
+
+working upon date fields
+-------------------------------------
+select customerNumber,paymentDate,amount of those payment which is received on 10-feb-2004
+
+select customerNumber,paymentDate,amount from payments where paymentDate='2004-02-10'
+
+select customerNumber,paymentDate,amount of those payment which is received in february 2004
+
+select customerNumber,paymentDate,amount from payments where paymentDate>='2004-02-01' and paymentDate<='2004-02-29'
+
+select customerNumber,paymentDate,amount of those payment which is received in  2004
+
+select customerNumber,paymentDate,amount from payments where paymentDate>='2004-01-01' and paymentDate<='2004-12-31'
+
+fetch employee detail of those employee who reporting manager. 
+select * from employees where reportsto IS NULL 
+
+fetch employee detail of those employee who has reporting manager. 
+select * from employees where reportsto IS NOT NULL 
+
+fetch customerNumber, customerName of those customers which has word wheels 
+select customerNumber,customerName from customers where customerName like '%wheels%'
+
+fetch customerNumber, customerName of those customers which has word wheels at beginning 
+select customerNumber,customerName from customers where customerName like 'wheels%'
+
+fetch customerNumber, customerName of those customers which has word wheels at ending 
+select customerNumber,customerName from customers where customerName like '%wheels'
+
