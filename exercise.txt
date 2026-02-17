@@ -170,3 +170,10 @@ write a program to accept age from user. if age is below 6 or above 13 then rais
 
 write a program that accept time from user in hours minutes and second format. take input from user separately. make sure that hours, minutes and seconds are in valid range. if not raise custom exception names as InvalidTimeException. if time is valid display message your have valid time. 
 
+database connectivity 
+---------------------------
+1) create book table 
+        id,name,author,price,pages,description,insertiondate 
+create insert_book.py file 
+        database connectivity using connection.py file 
+        insert row into book table, accept input from user 
