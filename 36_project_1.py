@@ -61,9 +61,33 @@ while True:
         elif choice == 3:
             print("update existing task")
             #use 35_upeate_row.py
+            productid = int(input("Enter task id to update row from table"))
+            title = input("Enter new task title")
+            detail = input("Enter new task detail")
+            requireddate = input("Enter task completion date (on or before which task must be completed)")
+            category = input("Press 1 for urgent, press 2 for important and press 3 casual task")
+            status = input("Press 0 for set task as pending, press 1 to set task as completed ")
+            try:
+                sql = "update task set title=%s,detail=%s,requireddate=%s,category=%s,status=%s where id=%s" # %s is called placeholder
+                data = [title,detail,requireddate,category,status,productid]
+                cursor = con.database.cursor()
+                cursor.execute(sql,data) 
+                con.database.commit()
+                print(cursor.rowcount, " row has been updated")
+            except connector.Error as error:
+                print("Error ",error)
         elif choice == 4:
             print("delete existing task")
-            #use 34_delete_row.py
+            productid = int(input("Enter task id to delete row from table"))
+            try:
+                sql = "delete from task where id=%s"
+                data = [productid] #list
+                cursor = con.database.cursor() 
+                cursor.execute(sql,data) #execute sql statement using data 
+                con.database.commit() #to save changes into database
+                print(str(cursor.rowcount) + " rows deleted")
+            except connector.Error as error:
+                print("Error :- ",error)
         else:
             print("good bye")
             break #break the loop

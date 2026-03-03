@@ -178,3 +178,7 @@ create insert_book.py file
         database connectivity using connection.py file 
         insert row into book table, accept input from user 
         fetch all rows from book table and display it(just like task)
+
+2) create menu driven program just like 36_project_1.py 
+    provide option to insert, update, delete, select book 
+
